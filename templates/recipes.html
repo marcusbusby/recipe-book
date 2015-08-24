@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+	{% for recipe in recipes %}
+		<p>{{ recipe.title }}</p>
+		<p>{{ recipe.instructions }}</p>
+		<p>{{ recipe.ingredients }}</p>
+	{% else %}
+		<p>no recipes to show yet</p>
+	{% endfor %}
+{% endblock %}
